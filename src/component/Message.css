@@ -1,0 +1,108 @@
+.mail {
+  background-color: rgb(227, 18, 18);
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 350px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.Product {
+  color: black;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.Phone {
+  color: black;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.Email {
+  color: black;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 70px;
+  border-radius: 5px;
+}
+.Message {
+  color: black;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-left: 70px;
+  border-radius: 5px;
+  font-size: medium;
+}
+.message {
+  width: 250px;
+  height: 20px;
+  margin-left: 50px;
+  padding: 30px;
+  margin-top: -10px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+.product {
+  width: 250px;
+  height: 20px;
+  margin-left: 50px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.number {
+  width: 250px;
+  height: 20px;
+  margin-left: 50px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.email {
+  width: 250px;
+  height: 20px;
+  margin-left: 50px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.phone {
+  width: 250px;
+  height: 20px;
+  margin-left: 50px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.send {
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  margin-left: 250px;
+  color: black;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: red;
+  font-family: sans-serif;
+  font-size: larger;
+}
+.heading {
+  margin-left: 35px;
+  margin-top: 20px;
+}
