@@ -1,60 +1,40 @@
 import React from "react";
 import "./Nav.css";
-import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import NonvegPizza from "./NonVegPizza";
-import Pizzamania from "./Pizzamania";
-import SpecilicityChicken from "./SpecilityChicken";
-import Beverages from "./Beverages";
-import Pizza from "../component/Pizza";
-import Message from "../component/Message";
-import RazorPay from "../component/RazorPay";
-import CreatePizza from "../component/CreatePizza";
+import { Link } from "react-router-dom";
 
-
-function Nav(props) {
+function Nav() {
   return (
-    <Router>
-      <nav className="nav-container">
-        <span className="nav">
-          <Link to="/nonveg">
-            <span className="nav-bar">
-              <button>NonvegPizza</button>
-            </span>
-          </Link>
-          <Link to="/pizzamania">
-            <span className="nav-bar">
-              <button>pizzamania</button>
-            </span>
-          </Link>
-          <Link to="/chicken">
-            <span className="nav-bar">
-              <button>SpecilicityChicken</button>
-            </span>
-          </Link>
-          <Link to="/beverages">
-            <span className="nav-bar">
-              <button>Beverages</button>
-            </span>
-          </Link>
-        </span>
-      </nav>
+    <div className="nav-container">
+      <Link to="/nonvegPizza" className="navB-bar4">
+        <div className="nav-bar1">
+          <h3 className="pizzaName">NonvegPizza</h3>
+        </div>
+      </Link>
+      <Link to="/pizzamania" className="navB-bar4">
+        <div className="nav-bar2">
+          <h3 className="pizzaName">pizzamania</h3>
+        </div>
+      </Link>
+      <Link to="/chicken" className="navB-bar4">
+        <div className="nav-bar3">
+          <h3 className="pizzaName">SpecilicityChicken</h3>
+        </div>
+      </Link>
+      <Link to="/beverage" className="navB-bar4">
+        <div className="nav-bar4">
+          <h3 className="pizzaName">Beverages</h3>
+        </div>
+      </Link>
 
-      <Routes>
-        <Route exact path="/nonveg" element={<NonvegPizza></NonvegPizza>} />
-        <Route exact path="/pizzamania" element={<Pizzamania />} />
-        <Route
-          exact
-          path="/chicken"
-          element={<SpecilicityChicken></SpecilicityChicken>}
-        />
-        <Route exact path="/Beverages" element={<Beverages></Beverages>} />
-
-        <Route exact path="/order" element={<Pizza></Pizza>} />
-        <Route exact path="/add" element={<CreatePizza />} />
-        <Route exact path="/mail" element={<Message />} />
-        <Route exact path="/purchase" element={<RazorPay />} />
-      </Routes>
-    </Router>
+      <div className="nav-barHome">
+        <Link to="/home" className="navB-bar4">
+          <h3 className="pizzaName">Home</h3>
+        </Link>
+        <Link to="/" className="navB-bar4">
+          <h3 className="pizzaLogout">Logout</h3>
+        </Link>
+      </div>
+    </div>
   );
 }
 

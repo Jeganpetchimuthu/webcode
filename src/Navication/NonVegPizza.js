@@ -7,10 +7,13 @@ import cheesy from "../Navication/image/mania3.jpg";
 import vegloaded from "../Navication/image/mania4.jpg";
 import tomato from "../Navication/image/mania5.jpg";
 import { Link } from "react-router-dom";
-
+import AssignmentReturnSharpIcon from "@mui/icons-material/AssignmentReturnSharp";
+import Header from "../Header";
+import HeaderNav from "../component/HeaderNav";
 function NonvegPizza() {
   return (
-    <div>
+    <div className="nonVegPizza-Header">
+      <HeaderNav />
       <div>
         <h1 className="mai-heade">NON VEG PIZZA</h1>
       </div>

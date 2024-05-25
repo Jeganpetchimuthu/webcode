@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./CreatePizza.css";
 import axios from "axios";
 import HeaderNav from "./HeaderNav";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
-function CreatePizza() {
+function UpdatePizza() {
+  const { id } = useParams();
   const navigate = useNavigate();
   const [pizza, setPizza] = useState({
     roll: "",
@@ -22,12 +23,12 @@ function CreatePizza() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
-        "https://pizza-app-server.vercel.app/pizza/create",
+      const res = await axios.patch(
+        `https://pizza-app-server.vercel.app/pizza/${id}`,
         pizza
       );
-      console.log(pizza);
-      console.log(res);
+
+      console.log(res.data);
       navigate("/order");
     } catch (error) {
       console.log(error);
@@ -37,7 +38,7 @@ function CreatePizza() {
     <div>
       <HeaderNav />
       <div className="create-container">
-        <h1>Create Your Order</h1>
+        <h1>Update Your Order</h1>
         <div className="main-container">
           <span className="form-container">
             <label className="content-container">roll:</label>
@@ -137,4 +138,4 @@ function CreatePizza() {
   );
 }
 
-export default CreatePizza;
+export default UpdatePizza;

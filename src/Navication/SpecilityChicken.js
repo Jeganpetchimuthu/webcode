@@ -5,9 +5,11 @@ import gourmet from "./image/img2.jpg";
 import capsicum from "./image/img3.jpg";
 import cheesy from "./image/img4.jpg";
 import { Link } from "react-router-dom";
+import HeaderNav from "../component/HeaderNav";
 function SpecilityChicken() {
   return (
-    <div>
+    <div className="nonVegPizza-Header">
+      <HeaderNav />
       <div>
         <h1 className="mai-heade">SPECILICITY CHICKEN</h1>
       </div>

@@ -4,9 +4,11 @@ import pepsi from "../Navication/image/pepsi.png";
 import pepsi_black from "../Navication/image/pepsi_black.png";
 import lipton from "../Navication/image/lipton.png";
 import { Link } from "react-router-dom";
+import HeaderNav from "../component/HeaderNav";
 function Beverages() {
   return (
-    <div>
+    <div className="nonVegPizza-Header">
+      <HeaderNav />
       <div>
         <h1 className="mai-heade">BEVERAGES</h1>
       </div>

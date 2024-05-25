@@ -1,35 +1,50 @@
 import React, { useState } from "react";
-import "./login.css";
+import "./Register.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
-export default function Login() {
+
+import { useNavigate } from "react-router-dom";
+export default function Register() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      const response = await axios.post("http://localhost:3001/api/register", {
-        firstName,
-        lastName,
-        email,
-        password,
-      });
-      console.log(response);
+      const response = await axios.post(
+        "https://pizza-app-server.vercel.app/api/register",
+        {
+          firstName,
+          lastName,
+          email,
+          password,
+        }
+      );
+      console.log(response.data);
+      navigate("/login");
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
+
   return (
-    <div>
-      <form className="login-cantaine" onClick={handleSubmit}>
-        <h2 className="header-page">User Login</h2>
-        <p className="para">please enter you login and password</p>
+    <div className="register-wrap">
+      <span className="registerinfo"></span>
+      <img
+        className="pizzaregisterImg"
+        src="https://st3.depositphotos.com/3557671/12879/v/950/depositphotos_128797746-stock-illustration-pizza-cart-icon-in-cartoon.jpg"
+        alt="pizzaimg"
+      ></img>
+      <form className="register-cantaine" onClick={handleSubmit}>
+        <h2 className="header-pages">Pizza User</h2>
+        <p className="paras">Please Enter you Email and password</p>
 
         <input
-          className="user"
+          className="name"
           type="text"
           name="firstName"
           placeholder="firstName"
@@ -41,7 +56,7 @@ export default function Login() {
         <br></br>
         <br></br>
         <input
-          className="user"
+          className="lname"
           type="text"
           name="lastName"
           placeholder="lastName"
@@ -53,7 +68,7 @@ export default function Login() {
         <br></br>
         <br></br>
         <input
-          className="user"
+          className="emails"
           type="text"
           name="email"
           placeholder="Enter your Email"
@@ -65,7 +80,7 @@ export default function Login() {
         <br></br>
         <br></br>
         <input
-          className="user"
+          className="pas"
           type="password"
           name="password"
           placeholder="password"
@@ -77,11 +92,10 @@ export default function Login() {
         <br></br>
 
         <br></br>
-        <Link to="/login">
-          <button className="button" type="submit">
-            Submit
-          </button>
-        </Link>
+
+        <button className="subbutton" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

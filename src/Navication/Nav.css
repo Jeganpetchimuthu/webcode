@@ -1,12 +1,78 @@
-.nav {
-  display: flex;
-  background-color: rgb(249, 252, 251);
-  margin-left: 40%;
-  margin-right: 30%;
-  padding: 10px 10px;
+.nav-container {
+  position: relative;
+  top: -20px;
+  left: 1px;
+  width: 1360px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 2px darkolivegreen;
 }
-.nav-bar {
-  padding: 10px 10px;
-  margin: 10px 10px;
+.nav-container:hover {
+  box-shadow: 2px 2px 2px brown;
+}
+
+.nav-bar1 {
+  position: relative;
+  left: 370px;
+  top: -8px;
+  width: 30px;
+  height: 10px;
   color: brown;
+  text-decoration: none;
+  font-weight: 900;
+}
+.nav-bar2 {
+  position: relative;
+  left: 510px;
+  top: -39px;
+  width: 30px;
+  height: 20px;
+  color: brown;
+  text-decoration: none;
+  font-weight: 900;
+}
+.nav-bar3 {
+  position: relative;
+  left: 650px;
+  top: -79px;
+  width: 30px;
+  height: 20px;
+  color: brown;
+  text-decoration: none;
+  font-weight: 900;
+}
+.nav-bar4 {
+  position: relative;
+  left: 840px;
+  top: -118px;
+  width: 30px;
+  height: 20px;
+  color: brown;
+  text-decoration: none;
+  font-weight: 900;
+}
+.nav-barHome {
+  position: relative;
+  left: 1110px;
+  top: -155px;
+  width: 30px;
+  height: 20px;
+  color: brown;
+  text-decoration: none;
+  font-weight: 900;
+}
+.navB-bar4 {
+  color: brown;
+  text-decoration: none;
+}
+.pizzaLogout {
+  position: relative;
+  left: 90px;
+  top: -45px;
+  width: 30px;
+  height: 20px;
+  color: brown;
+  text-decoration: none;
+  font-weight: 900;
 }

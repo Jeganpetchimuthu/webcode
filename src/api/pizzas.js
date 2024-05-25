@@ -29,7 +29,7 @@ import axios from "axios";
 //     .then((data) => data);
 // }
 export function deletePizzaApi(id) {
-  return axios(`http://localhost:3001/pizza/${id}`, {
+  return axios(`https://webcode-pizza.onrender.com/pizza/${id}`, {
     method: "DELETE",
     headers: {
       "content-Type": "application-json",

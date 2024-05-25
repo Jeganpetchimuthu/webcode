@@ -2,14 +2,22 @@ import "./App.css";
 
 import Header from "./Header";
 
-import Nav from "./Navication/Nav";
-
 import Register from "./Register";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from "./Home";
 import Login from "./Login";
+import NonvegPizza from "./Navication/NonVegPizza";
+import Pizzamania from "./Navication/Pizzamania";
+import SpecilicityChicken from "./Navication/SpecilityChicken";
+import Beverages from "./Navication/Beverages";
+import Pizza from "./component/Pizza";
+import Message from "./component/Message";
+
+import CreatePizza from "./component/CreatePizza";
+import Pay from "./Pay";
+import UpdatePizza from "./component/UpdatePizza";
+
 function App() {
   return (
     <div className="App">
@@ -18,12 +26,21 @@ function App() {
           <Route exact path="/" element={<Register />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/home" element={<Header />} />
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/" element={<Nav />} />
+          <Route
+            exact
+            path="/nonvegPizza"
+            element={<NonvegPizza></NonvegPizza>}
+          />
+          <Route exact path="/pizzamania" element={<Pizzamania />} />
+          <Route exact path="/chicken" element={<SpecilicityChicken />} />
+          <Route exact path="/beverage" element={<Beverages></Beverages>} />
+          <Route exact path="/order" element={<Pizza></Pizza>} />
+          <Route exact path="/add" element={<CreatePizza />} />
+          <Route exact path="/mail" element={<Message />} />
+          <Route exact path="/pay" element={<Pay />} />
+          <Route exact path="/update/:id" element={<UpdatePizza />} />
         </Routes>
       </Router>
-      <Nav />
-      <Home />
     </div>
   );
 }

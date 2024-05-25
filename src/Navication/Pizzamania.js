@@ -6,14 +6,13 @@ import cheesy from "../Navication/image/mania3.jpg";
 import vegloaded from "../Navication/image/mania4.jpg";
 import tomato from "../Navication/image/mania5.jpg";
 import { Link } from "react-router-dom";
+import HeaderNav from "../component/HeaderNav";
 function Pizzamania() {
   return (
-    <div>
+    <div className="nonVegPizza-Header">
+      <HeaderNav />
       <div>
         <h1 className="mai-heade">PIZZA MANIA</h1>
-        <span>
-          <button>Back</button>
-        </span>
       </div>
       <div className="container">
         <div>

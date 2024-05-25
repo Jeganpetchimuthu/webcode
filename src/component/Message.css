@@ -1,22 +1,31 @@
 .mail {
+  position: relative;
+  top: -30px;
   background-color: rgb(227, 18, 18);
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 500px;
+  width: 1340px;
+  height: 100vh;
   margin-top: 50px;
-  margin-left: 350px;
+  margin-left: 0px;
   border-radius: 10px;
   margin-bottom: 40px;
 }
 
 .Product {
-  color: black;
-  height: 20px;
+  color: white;
+  width: 350px;
+  height: 40px;
   margin-bottom: 10px;
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 5px;
+  outline: none;
+  background-color: black;
+  border: 1px solid gray;
+}
+.Product:hover {
+  box-shadow: 3px 3px 7px rgb(250, 169, 20);
 }
 
 .Phone {
@@ -25,32 +34,68 @@
   margin-bottom: 10px;
   margin-top: 10px;
   border-radius: 5px;
+  width: 350px;
+  height: 40px;
+  outline: none;
+  background-color: black;
+  border: 1px solid gray;
 }
-.Email {
+.Phone:hover {
+  box-shadow: 3px 3px 7px rgb(250, 169, 20);
+}
+.mailEmail {
+  width: 350px;
+  height: 40px;
   color: black;
-  height: 20px;
+  outline: none;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 70px;
+  margin-left: 90px;
+  border-radius: 5px;
+  background-color: black;
+  border: 1px solid gray;
+}
+.mailEmail:hover {
+  box-shadow: 3px 3px 7px rgb(250, 169, 20);
+}
+.mailemail {
+  width: 350px;
+  height: 40px;
+  color: black;
+  outline: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 90px;
   border-radius: 5px;
 }
-.Message {
-  color: black;
+
+.Messagea {
+  width: 400px;
   height: 40px;
+  color: white;
+  outline: none;
   margin-bottom: 10px;
-  margin-top: 50px;
-  margin-left: 70px;
+  margin-top: 10px;
+  margin-left: 140px;
   border-radius: 5px;
   font-size: medium;
+  background-color: black;
+  border: 1px solid gray;
 }
-.message {
+.Messagea:hover {
+  box-shadow: 3px 3px 7px rgb(250, 169, 20);
+}
+.messagelab {
+  position: relative;
   width: 250px;
   height: 20px;
-  margin-left: 50px;
+
   padding: 30px;
-  margin-top: -10px;
-  margin-bottom: 100px;
+  top: -20px;
+  left: 90px;
+
   border-radius: 10px;
+  color: black;
 }
 .product {
   width: 250px;
@@ -95,12 +140,16 @@
   height: 50px;
   width: 100px;
   margin-left: 250px;
-  color: black;
+  color: rgb(243, 240, 240);
   margin-top: 25px;
   border-radius: 10px;
-  background-color: red;
+  background-color: black;
   font-family: sans-serif;
   font-size: larger;
+  border: 1px solid red;
+}
+.send:hover {
+  box-shadow: 3px 3px 7px rgb(250, 169, 20);
 }
 .heading {
   margin-left: 35px;
